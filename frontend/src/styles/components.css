@@ -1,0 +1,58 @@
+.sidebar {
+  background: #222;
+  color: white;
+  padding: 1rem;
+  height: 100vh;
+  width: 200px;
+  position: fixed;
+}
+.data-section {
+  padding: 2rem;
+  margin-left: 220px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+}
+.navbar {
+  background-color: #0077cc;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logout-btn {
+  background: white;
+  color: #0077cc;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  font-size: 1.2rem;
+}
+
+.dashboard-container {
+  display: flex;
+}
+
+.dashboard-content {
+  flex-grow: 1;
+  margin-left: 220px;
+  padding: 1rem;
+}
