@@ -2,6 +2,7 @@ import sqlalchemy.orm as orm
 import models
 
 
+
 async def get_admin_overview(db: orm.Session):
     total_courses = db.query(models.CourseUnit).count()
     total_reviews = db.query(models.Review).count()

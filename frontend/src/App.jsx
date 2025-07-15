@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import About from './pages/About';
 import Home from './pages/Home';
 import { AuthContext } from './context/AuthContext';
 import AdminDashboard from './pages/AdminDashboard';
@@ -28,6 +29,7 @@ const App = () => (
     <Route path="/" element={<Home />} />
     <Route path="/login" element={<Login />} />
     <Route path="/register" element={<Register />} />
+    <Route path="/about" element={<About />} />
     <Route path="/dashboard" element={<RoleBasedDashboard />} />
   </Routes>
 );

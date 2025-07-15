@@ -15,7 +15,8 @@ table {
   border-collapse: collapse;
   margin-top: 1rem;
 }
-th, td {
+th,
+td {
   border: 1px solid #ccc;
   padding: 0.5rem;
   text-align: left;
@@ -23,12 +24,15 @@ th, td {
 .navbar {
   background-color: #0077cc;
   color: white;
-  padding: 1rem;
+  padding: 0.6rem;
   text-align: center;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: -20px;
+  margin-left: -10px;
+  margin-top: -20px;
 }
 
 .navbar .logout-btn {
@@ -37,6 +41,8 @@ th, td {
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
+  border-radius: 6px;
+  margin-right: 9px;
 }
 
 .home-page {
@@ -55,4 +61,48 @@ th, td {
   flex-grow: 1;
   margin-left: 220px;
   padding: 1rem;
+}
+
+.sidebar-nav {
+  margin-top: 2rem;
+}
+
+.sidebar-nav h4 {
+  color: #888;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-nav li a {
+  display: block;
+  color: #ddd;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 800;
+  transition: color 0.2s;
+}
+
+.sidebar-nav li a:hover {
+  color: #fff;
+}
+
+.logout-button {
+  position: absolute;
+  bottom: 4rem;
+  left: 1rem;
+  right: 1rem;
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  cursor: pointer;
+  border-radius: 10px;
 }

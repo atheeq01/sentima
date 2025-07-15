@@ -1,14 +1,14 @@
-import React, { useContext } from 'react';
-import { AuthContext } from '../context/AuthContext';
-import '../styles/components.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/components.css";
 
 const Navbar = () => {
-  const { logout } = useContext(AuthContext);
-
   return (
     <div className="navbar">
       <h2>Student Feedback System</h2>
-      <button onClick={logout} className="logout-btn">Logout</button>
+      <div className="nav-links">
+        <Link to="/" className="logout-btn">Home</Link>
+      </div>
     </div>
   );
 };

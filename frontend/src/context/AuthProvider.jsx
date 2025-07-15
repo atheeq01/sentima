@@ -7,7 +7,7 @@ const authChannel = new BroadcastChannel('auth_channel');
 
 export const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null);
-    // Add a loading state to prevent UI flicker on initial page load
+
     const [loading, setLoading] = useState(true);
 
     // Centralized function to fetch user data and set state

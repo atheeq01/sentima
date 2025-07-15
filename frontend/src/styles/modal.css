@@ -1,4 +1,4 @@
-/* src/components/Modal.css */
+/* src/style/Modal.css */
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -27,7 +27,7 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #eee;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   margin-bottom: 20px;
 }
 
@@ -43,8 +43,47 @@
   cursor: pointer;
 }
 
-.modal-body {
 
+
+.review-submission-area {
+  padding: 1px;
+}
+
+.review-submission-area h3 {
+  margin-top: 0px;
+  color: #333;
+}
+
+.review-submission-area textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.review-submission-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-content.review-modal {
+  width: 700px;
+  height: 350px;
+}
+
+.modal-content.review-modal .review-submission-area textarea {
+  min-height: 70px;
+  height: 50px
+}
+
+.model-content.review-model.review-header{
+     margin-top: 0px;
 }
 
 @keyframes slide-down {

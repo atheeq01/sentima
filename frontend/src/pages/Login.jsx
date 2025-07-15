@@ -15,8 +15,7 @@ const Login = () => {
     try {
       await login(email, password);
 
-      // After login, user info should be set in context
-      // Navigate to /dashboard, which will render correct dashboard based on user.role
+     
       navigate('/dashboard');
     } catch (err) {
       console.error(err);
