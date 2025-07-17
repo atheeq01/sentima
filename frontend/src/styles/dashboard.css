@@ -177,3 +177,20 @@
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #e5e7eb;
 }
+
+.logout-btn {
+  background: #0077cc;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-right: 9px;
+  width: 43px;
+}
+
+.logout-btn:hover {
+  background: white;
+  color: #0077cc;
+  border: 1px solid #0077cc;
+}

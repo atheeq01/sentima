@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import '../styles/pages.css';
 
@@ -29,6 +29,7 @@ const Register = () => {
         <input name="student_id" placeholder="Student ID" value={form.student_id} onChange={handleChange} required />
         <button type="submit">Register</button>
         <p onClick={()=>navigate('/login')}>Already have an account? Login</p>
+        <Link to="/" className="logout-btn">Home</Link>
       </form>
     </div>
   );

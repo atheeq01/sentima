@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
+import "../styles/components.css";
 
 import '../styles/pages.css';
 
@@ -43,7 +44,9 @@ const Login = () => {
         />
         <button type="submit">Login</button>
         <p onClick={() => navigate('/register')}>Don't have an account? Register</p>
+        <Link to="/" className="logout-btn">Home</Link>
       </form>
+
     </div>
   );
 };
